@@ -1,5 +1,7 @@
 # Projeto Back-End 
 
+Henrique Cals,Guilherme Pinon, Caio Cunha, Henrique Mundy, João Pedro Sampaio e Pedro Paulo
+
 **Código da Disciplina**: IBM8936<br>
 
 ## Sobre 
