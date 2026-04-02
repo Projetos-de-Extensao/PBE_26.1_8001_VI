@@ -91,7 +91,9 @@ O estudante deve poder visualizar seu cronograma de estágio, prazos de relatór
 
    <b>Supervisor de Estagio</b> - Descrição de atividades planejadas do estagiário, cronograma de execução, cumprimento de carga horária, e orientações do professor.
 </p>
-  
+
+---
+
 ## Conclusão
 <p align = "justify">
 
