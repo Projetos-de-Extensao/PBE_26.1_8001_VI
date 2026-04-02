@@ -15,7 +15,6 @@ A equipe se reuniu para debater ideias gerais sobre o projeto de desenvolvimento
  
 ## Brainstorm
  
-## Versão 1.0
  
 ## Perguntas
  
