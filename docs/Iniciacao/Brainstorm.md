@@ -79,9 +79,10 @@ O professor deve ter um dashboard para visualizar todos seus orientandos, status
 O supervisor deve receber notificações sobre submissões de relatórios, prazos de avaliação e ter acesso a histórico de atividades do estagiário.
 
 O estudante deve poder visualizar seu cronograma de estágio, prazos de relatórios, feedbacks recebidos e status de aprovações.
-
 </p>
  
+---
+
 ### 6. Quais informações seriam importantes para cada ator da plataforma?
 <p align = "justify">
    <b>Estudante</b> - Informações sobre carga horária cumprida, próximas atividades, prazos de relatórios, feedback do orientador e histórico de aprovações.
