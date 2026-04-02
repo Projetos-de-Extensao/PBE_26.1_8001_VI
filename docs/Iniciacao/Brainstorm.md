@@ -10,7 +10,7 @@ O brainstorm é uma técnica de elicitação de requisitos que consiste em reuni
  
 ## Metodologia
 <p align = "justify">
-A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .... e terminou..., onde o XXXX XXXX foi o moderador, direcionando a equipe com questões pré-elaboradas, e transcrevendo as respostas para o documento.
+A equipe se reuniu para debater ideias gerais sobre o projeto de desenvolvimento de um sistema de gestão de estágios para o Ibmec. Foram discutidas as principais funcionalidades necessárias para garantir conformidade com a Lei nº 11.788/2008, regulamentos do MEC e regulamentação interna do Ibmec. Discussões focaram em como gerenciar estágios obrigatórios e não obrigatórios, formalização de documentos (TCE), acompanhamento supervisionado e validação de relatórios. O moderador direcionou a equipe com questões pré-elaboradas com base na pesquisa de legislação e aplicações similares.
 </p>
  
 ## Brainstorm
@@ -22,108 +22,76 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 ### 1. Qual o objetivo principal da aplicação?
  
 <p align = "justify">
-<b>XXXX</b> - Deve ser uma plataforma onde qualquer pessoa possa...
-</p>
- 
-<b>ZZZ</b> - A plataforma deve fornece...
- 
-<b>YYYY</b> - O objetivo da aplicação é....
- 
-<b>WWWW</b> - O principal objetivo da aplicação é a...
- 
-<b>KKKK</b> - A plataforma deve gerenciar...
-</p>
- 
----
- 
-### 2. Como será o processo para cadastrar um novo cliente?
- 
-<p align = "justify">
-<b>XXXX</b> - O moderador deverá fazer login e...
- 
-<b>YYYY</b> - O cliente...
- 
-<b>WWWW</b> - Com o usuário logado, ele deverá...
-
-<b>ZZZZ</b> - O cliente...
- 
-<b>KKK</b> - O cliente...
- 
----
- 
-### 3. Como será a forma de adicionar produtos?
- 
-<p align = "justify">
-<b>XXXX</b> - O cliente ao cadastrar...
-</p>
- 
-<p align = "justify">
-<b>YYYYY</b> - O produto tem...
-</p>
- 
-<b>ZZZZ</b> - O produto....
- 
-<b>XXXX</b> - O produto....
+Deve ser uma plataforma de gestão centralizada de estágios que garanta conformidade com a Lei nº 11.788/2008 e regulamentos do Ibmec.
 
  
----
+A plataforma deve fornecer ferramentas para acompanhamento e supervisão de estudantes estagiários, permitindo validação de relatórios.
  
-### 4. Outras perguntas pertinentes ao contexto
-
-<p align = "justify">
-<b>XXXX</b> - Com a localização...
+O objetivo da aplicação é automatizar e simplificar os processos de formalização, acompanhamento e validação de estágios, reduzindo trabalho manual.
  
-<b>YYYY</b> - O cliente...
+O principal objetivo da aplicação é garantir que todos os estágios estejam em conformidade com a legislação trabalhista e educacional vigente.
  
-<b>ZZZ</b> - O cliente...
- 
----
- 
-### 5. "Outras perguntas pertinentes ao contexto", Como seria a forma de adicionar do cliente adicionar os produtos ?
-<p align = "justify">
-<b>XXX</b> - O cliente....
+A plataforma deve gerenciar de forma integrada estudantes, empresas, orientadores, documentos (TCE) e relatórios de estágios.
 </p>
  
-### 6. Quais informações seriam interessante para o cliente?
+---
+ 
+### 2. Como será o processo para cadastrar um novo estágio?
+ 
 <p align = "justify">
-   <b>XXX</b> - Informações...
+O estudante deverá fazer login na plataforma e acessar o formulário de novo estágio, preenchendo informações pessoais e acadêmicas.
+ 
+O sistema deve diferenciar entre estágio obrigatório e não obrigatório, aplicando regras específicas de cada tipo (remuneração, bolsa-auxílio, etc).
+ 
+O cadastro deve permitir que múltiplos atores (estudante, orientador, supervisor de empresa) confirmem e assinem eletronicamente o TCE.
+</p>
+---
+ 
+### 3. Como será o processo de submissão e validação de relatórios?
+ 
+<p align = "justify">
+O estudante deve ter acesso a um módulo para upload de relatórios periódicos.
+
+O relatório deve ser submetido automaticamente ao professor orientador e ao supervisor da empresa para análise e feedback estruturado.
+
+O sistema deve permitir validação automática de conformidade com critérios legais (carga horária, período de execução, descrição de atividades).
+ 
+O supervisor deve poder comentar, sugerir correções e aprovar ou rejeitar o relatório dentro de prazos definidos.
+</p>
+ 
+---
+ 
+### 4. Como a plataforma garante conformidade com a legislação de estágios?
+
+<p align = "justify">
+A plataforma deve controlara carga horária diária (máximo 6h) e semanal (máximo 30h) do estagiário, alertando quando há excesso.
+ 
+O sistema deve rastrear a duração máxima do estágio (até 2 anos na mesma empresa) e avisar quando está próximo do limite.
+ 
+A plataforma deve garantir que todo estágio tenha supervisão de um profissional da empresa e um professor orientador do Ibmec.
+</p>
+---
+ 
+### 5. Como será o acompanhamento e comunicação entre os atores do estágio?
+<p align = "justify">
+O professor deve ter um dashboard para visualizar todos seus orientandos, status de estágios, datas de relatórios e alertas sobre estudantes em risco.
+
+O supervisor deve receber notificações sobre submissões de relatórios, prazos de avaliação e ter acesso a histórico de atividades do estagiário.
+
+O estudante deve poder visualizar seu cronograma de estágio, prazos de relatórios, feedbacks recebidos e status de aprovações.
+
+</p>
+ 
+### 6. Quais informações seriam importantes para cada ator da plataforma?
+<p align = "justify">
+   <b>Estudante</b> - Informações sobre carga horária cumprida, próximas atividades, prazos de relatórios, feedback do orientador e histórico de aprovações.
    
-   <b>ZZZZ</b> - O cliente usuário poderá acessar informações...
+   <b>Professor Orientador</b> - Status de todos seus orientandos, lista de relatórios pendentes, alertas de não conformidade, dados da empresa concedente e informações de contato do supervisor.
 
-   <b>WWWWs</b> - O usuário poderá ver scouts de partidas do torneio, ver as regras dos torneios, locais e data das partidas.
-   
+   <b>Supervisor de Estagio</b> - Descrição de atividades planejadas do estagiário, cronograma de execução, cumprimento de carga horária, e orientações do professor.
 </p>
- 
-### Requisitos elicitados
- 
-|ID|Descrição|
-|----|-------------|
-|BS01| O cliente...|
-|BS02| O cliente...|
-|BS03| O cliente...|
-|BS04| O cliente...|
-|BS05| O cliente...|
-|BS06| O cliente...|
-|BS07| O cliente...|
-|BS08| O cliente...|
-|BS09| O cliente...|
-|BS10| O produto...|
-|BS11| O produto...|
-|BS12| O produto...|
-|BS13| O produto...|
-|BS14| O produto...|
-|BS15| O produto...|
- 
+  
 ## Conclusão
 <p align = "justify">
-Através da aplicação da técnica, foi possível elicitar alguns dos primeiros requisitos do projeto.
+
 </p>
-## Referências Bibliográficas
- 
-> BARBOSA, S. D. J; DA SILVA, B. S. Interação humano-computador. Elsevier, 2010.
- 
- 
-## Autor(es)
-| Data | Versão | Descrição | Autor(es) |
-| -- | -- | -- | -- |
-| DD/MM/YYYY | 1.0 | Criação do documento | XXX XXXX, XXXX XXXX, YYY YYYY e ZZZ XXXX |
