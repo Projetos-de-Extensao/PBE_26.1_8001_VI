@@ -9,6 +9,8 @@ Henrique Cals,Guilherme Pinon, Caio Cunha, Henrique Mundy, João Pedro Sampaio e
 ## Sobre 
 Descreva o seu projeto em linhas gerais. 
 
+Back-end desenvolvido na disciplina de Projeto Back-End do IBMEC, construído em Python com foco em arquitetura limpa e boas práticas de desenvolvimento.
+
 ## Instalação 
 **Linguagens**: Python, Django<br>
 **Tecnologias**: Github, Visual Studio Code<br>
