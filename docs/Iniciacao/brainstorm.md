@@ -95,5 +95,13 @@ O estudante deve poder visualizar seu cronograma de estágio, prazos de relatór
 
 ## Conclusão
 <p align = "justify">
+A proposta é desenvolver uma plataforma de gestão centralizada de estágios com foco na automatização, padronização e garantia de conformidade legal ao longo de todo o ciclo do estágio. A solução integra, em um único ambiente, estudantes, professores orientadores e supervisores de empresa, promovendo maior transparência, controle e eficiência nos processos.
 
+A plataforma organiza os fluxos de cadastro de estágio, formalização documental (TCE), submissão e validação de relatórios, além de implementar verificações automáticas baseadas nas regras da Lei nº 11.788/2008, como limites de carga horária, duração máxima do estágio e obrigatoriedade de supervisão.
+
+Também é previsto um sistema de acompanhamento contínuo, com dashboards, notificações e feedbacks estruturados, facilitando a comunicação entre os envolvidos e permitindo um monitoramento mais eficiente do progresso do estudante.
+
+Ao centralizar informações e processos, a aplicação busca reduzir a carga operacional manual, minimizar erros e aumentar a confiabilidade dos dados, contribuindo para uma gestão acadêmica mais eficiente e organizada.
+
+Por fim, a plataforma tem como objetivo atender às exigências legais e institucionais, ao mesmo tempo em que melhora a experiência dos usuários, tornando o processo de estágio mais simples, transparente e eficiente para todas as partes envolvidas.
 </p>
