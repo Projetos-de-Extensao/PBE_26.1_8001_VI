@@ -5,12 +5,12 @@ title: Brainstorm
  
 ## Introdução
 <p align = "justify">
-O brainstorm é uma técnica de elicitação de requisitos que consiste em reunir a equipe e discutir sobre diversos tópicos gerais do projeto apresentados no documento problema de negócio. No brainstorm o diálogo é incentivado e críticas são evitadas para permitir que todos colaborem com suas próprias ideias.
+O brainstorm busca listar os requisitos. Para isso, é necessário reunir a equipe e discutir sobre as partes do projeto de negócio. Nessa etapa, é utilizado diálogo e evitado críticas, pra permitir a colaboração de todos com suas ideias.
 </p>
  
 ## Metodologia
 <p align = "justify">
-A equipe se reuniu para debater ideias gerais sobre o projeto de desenvolvimento de um sistema de gestão de estágios para o Ibmec. Foram discutidas as principais funcionalidades necessárias para garantir conformidade com a Lei nº 11.788/2008, regulamentos do MEC e regulamentação interna do Ibmec. Discussões focaram em como gerenciar estágios obrigatórios e não obrigatórios, formalização de documentos (TCE), acompanhamento supervisionado e validação de relatórios. O moderador direcionou a equipe com questões pré-elaboradas com base na pesquisa de legislação e aplicações similares.
+A equipe se juntou pra discutir ideias gerais sobre o projeto de um sistema de gestão de estágios para o IBMEC. Foram debatidas as principais funcionalidades para ir de acordo com a Lei nº 11.788/2008, regulamentos do MEC e regulamentação interna do Ibmec. Os debates tiveram foco em como gerenciar os estágios, formalizar documentos, acompanhamento supervisionado e validar relatórios. O moderador direcionou a equipe com questões tendo base na pesquisa de legislação e aplicação similares.
 </p>
  
 ## Brainstorm
