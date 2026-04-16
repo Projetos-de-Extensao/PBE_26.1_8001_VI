@@ -37,7 +37,7 @@ Back-end desenvolvido na disciplina de Projeto Back-End do IBMEC, construído em
            --> 4.1) O aluno informa dados inválidos ou incompletos <br>  |-- Gera erro e solicitação de correção do sistema; <br>
            --> 7.1) O sistema já possui esse estágio cadastrado <br>  |-- Gera erro e impede a duplicação.<br>
 
-           ## Caso de Uso 2 - Envio de Relatório
+## Caso de Uso 2 - Envio de Relatório
 * Ator - Aluno  <br>
   * Descrição - Aluno enviar relatórios sobre o estágio.  <br>
 
