@@ -113,7 +113,7 @@ Back-end desenvolvido na disciplina de Projeto Back-End do IBMEC, construído em
 
 
 
-           ## Caso de Uso 2 - Login <br>
+## Caso de Uso 2 - Login <br>
 * Atores - Aluno, Sistema  <br>
   * Descrição - Aluno poder acessar o sistema.  <br>
 
@@ -131,7 +131,7 @@ Back-end desenvolvido na disciplina de Projeto Back-End do IBMEC, construído em
 
 
 
-           ## Caso de Uso 3 - Seguir Usuário <br>
+## Caso de Uso 3 - Seguir Usuário <br>
 * Atores - Aluno  <br>
   * Descrição - Aluno poder seguir outro perfil.  <br>
 
@@ -146,7 +146,7 @@ Back-end desenvolvido na disciplina de Projeto Back-End do IBMEC, construído em
 
 
 
-       ## Caso de Uso 4 - Criar postagem <br>
+## Caso de Uso 4 - Criar postagem <br>
 * Atores - Aluno  <br>
   * Descrição - Aluno poder postar conteúdo.  <br>
 
@@ -162,7 +162,7 @@ Back-end desenvolvido na disciplina de Projeto Back-End do IBMEC, construído em
 
 
 
-       ## Caso de Uso 5 - Enviar DM <br>
+## Caso de Uso 5 - Enviar DM <br>
 * Atores - Aluno  <br>
   * Descrição - Aluno poder enviar mensagens privadas.  <br>
 
