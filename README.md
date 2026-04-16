@@ -16,7 +16,8 @@ Back-end desenvolvido na disciplina de Projeto Back-End do IBMEC, construído em
 **Tecnologias**: Github, Visual Studio Code<br>
  os pré-requisitos para rodar o seu projeto são UX, Engenharia de Dados, POO.
 
- # Levantamento de Requisitos com Casos de Uso de forma narrativa
+ # Levantamento de Requisitos
+ # Casos de Uso de forma narrativa
 
 ## Caso de Uso 1 - Cadastro em Estágio
 * Ator - Aluno  <br>
