@@ -33,5 +33,5 @@ Back-end desenvolvido na disciplina de Projeto Back-End do IBMEC, construído em
       8 -- O sistema registra o estágio. <br>
 
         * Fluxo Alternativo: <br>
-           | 4.1) O aluno informa dados inválidos ou incompletos <br>  .|  .--> Gera erro e solicitação de correção do sistema; <br>
-           | 7.1) O sistema já possui esse estágio cadastrado <br>  .|  .--> Gera erro e impede a duplicação.<br>
+           --> 4.1) O aluno informa dados inválidos ou incompletos <br>  |-- Gera erro e solicitação de correção do sistema; <br>
+           --> 7.1) O sistema já possui esse estágio cadastrado <br>  |-- Gera erro e impede a duplicação.<br>
