@@ -17,6 +17,23 @@ Back-end desenvolvido na disciplina de Projeto Back-End do IBMEC, construído em
  os pré-requisitos para rodar o seu projeto são UX, Engenharia de Dados, POO.
 
  # Levantamento de Requisitos
+
+🔹 Requisitos Funcionais (RF)
+👤 Contas
+RF01: O sistema deve permitir a criação de contas de usuário.
+RF02: O sistema deve validar os dados informados no cadastro.
+RF03: O sistema deve criptografar dados sensíveis do usuário.
+RF04: O sistema deve enviar e-mail de verificação com link de confirmação.
+RF05: O sistema deve permitir login no sistema.
+RF06: O sistema deve permitir alteração dos dados da conta.
+RF07: O sistema deve permitir recuperação de senha.
+RF08: O sistema deve realizar exclusão lógica de contas.
+RF09: O sistema deve permitir visualização dos dados da conta.
+
+
+
+
+
  # Casos de Uso de forma narrativa
 
 ## Caso de Uso 1 - Cadastro em Estágio
