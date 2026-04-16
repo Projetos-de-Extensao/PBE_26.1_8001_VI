@@ -18,3 +18,4 @@ Back-end desenvolvido na disciplina de Projeto Back-End do IBMEC, construído em
 
  ## Levantamento de Requisitos com Casos de Uso de forma narrativa
 
+# Caso de Uso 1 - Cadastro em Estágio
