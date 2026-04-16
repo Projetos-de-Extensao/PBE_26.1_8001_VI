@@ -22,7 +22,7 @@ Back-end desenvolvido na disciplina de Projeto Back-End do IBMEC, construído em
 ">>" Ator - Aluno
 ">" Descrição - Aluno cadastr as informações do estágio no sistema.
 
-   >> Fluxo principal:
+   >> Fluxo principal: <br>
 >   > 1) O aluno acessa o sistema; <br>
 >   > 2) O aluno cria uma conta; <br>
 >   > 3) O aluno realiza login; <br>
@@ -32,6 +32,6 @@ Back-end desenvolvido na disciplina de Projeto Back-End do IBMEC, construído em
 >   > 7) O sistema valida os dados; <br>
 >   > 8) O sistema registra o estágio. <br>
 
-   >> Fluxo Alternativo:
-->  4.1) O aluno informa dados inválidos ou incompletos --> Gera erro e solicitação de correção do sistema; <br>
-->  7.1) O sistema já possui esse estágio cadastrado --> Gera erro e impede a duplicação.
+   >> Fluxo Alternativo:<br>
+->  4.1) O aluno informa dados inválidos ou incompletos <br> --> Gera erro e solicitação de correção do sistema; <br>
+->  7.1) O sistema já possui esse estágio cadastrado <br> --> Gera erro e impede a duplicação.<br>
