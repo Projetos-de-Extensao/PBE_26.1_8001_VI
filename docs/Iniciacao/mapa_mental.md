@@ -1,67 +1,54 @@
-﻿---
-id: mapa_mental
-title: Mapas Mentais
----
- 
-## Introdução
- 
-<p align = "justify">
-Mapa mental consiste em criar resumos cheios de símbolos, cores, setas e frases de efeito com o objetivo de organizar o conteúdo e facilitar associações entre as informações destacadas. Esse material é muito indicado para pessoas que têm facilidade de aprender de forma visual.
-</p>
- 
-## Metodologia
- 
-<p align = "justify">
-Foi levantado um ponto importante sobre o app e, assim, foi produzido o mapa mental. O documento foi produzido utilizando a ferramenta...
-</p>
- 
-## Mapa mental - Geral.
- 
-## Versão 1.0
- 
-### Mapa mental 1
- 
-[![Mapa mental Entrevista](../assets/Mapas_Mentais/image.png)](../assets/Mapas_Mentais/image.png)
- 
- 
-### Mapa mental 2
- 
-[![Mapa mental Brainstorm](../assets/Mapas_Mentais/image.png)](../assets/Mapas_Mentais/image.png)
- 
-## Conclusão
- 
-<p align = "justify">
-O mapa mental é uma ficha de estudos que ajuda a dar uma visão geral do tema, e ajuda a fixar os pontos mais importantes sobre o app.
-</p>
+# Mapa Mental
+
+O mapa mental consolida os principais eixos do projeto: legislacao, requisitos, atores, processos e validacao de relatorios.
+
+## Contexto
+
+O artefato foi construido para organizar visualmente os pontos centrais do sistema de gestao de estagios e facilitar a comunicacao entre problema, regras e fluxo operacional.
+
+## Estrutura representada
+
+- base legal e institucional
+- requisitos funcionais do sistema
+- atores envolvidos no processo
+- fluxo de avaliacao e validacao
+- referencias de benchmark e apoio
+
+## Mapa visual
+
+![Mapa mental do projeto](../assets/Mapas_Mentais/image.png)
+
+## Fonte em PlantUML
+
+O rascunho textual utilizado como base para o mapa esta em [mapa_mental.puml](mapa_mental.puml).
 
 ```plantuml
 @startmindmap
-* Sistema de Gestão de Estágios
-** Legislação
+* Sistema de Gestao de Estagios
+** Legislacao
 *** Lei 11.788/2008
 *** MEC
 *** Regulamento Interno
 
 ** Sistema
-*** Cadastro de Estágio
-*** Relatórios
+*** Cadastro de Estagio
+*** Relatorios
 *** Controle de Conformidade
 *** Alertas
 
-** Usuários
+** Usuarios
 *** Estudante
 *** Professor
 *** Supervisor
-*** Coordenação
+*** Coordenacao
 
 ** Processos
 *** Ingresso
 *** Acompanhamento
-*** Avaliação
+*** Avaliacao
 
 ** Tecnologia
 *** IA
-*** Integrações
+*** Integracoes
 @endmindmap
 ```
-
