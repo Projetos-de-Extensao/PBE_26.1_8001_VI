@@ -16,6 +16,22 @@ Back-end desenvolvido na disciplina de Projeto Back-End do IBMEC, construído em
 **Tecnologias**: Github, Visual Studio Code<br>
  os pré-requisitos para rodar o seu projeto são UX, Engenharia de Dados, POO.
 
- ## Levantamento de Requisitos com Casos de Uso de forma narrativa
+ # Levantamento de Requisitos com Casos de Uso de forma narrativa
 
-# Caso de Uso 1 - Cadastro em Estágio
+## Caso de Uso 1 - Cadastro em Estágio
+>> Ator - Aluno
+> Descrição - Aluno cadastr as informações do estágio no sistema.
+
+   >> Fluxo principal:
+>   > 1) O aluno acessa o sistema;
+>   > 2) O aluno cria uma conta;
+>   > 3) O aluno realiza login;
+>   > 4) O aluno seleciona a opção de cadastrar estágio;
+>   > 5) O aluno preenche os campos das informações;
+>   > 6) O aluno confirma o cadastro;
+>   > 7) O sistema valida os dados;
+>   > 8) O sistema registra o estágio.
+
+   >> Fluxo Alternativo:
+>   > 4.1) O aluno informa dados inválidos ou incompletos --> Gera erro e solicitação de correção do sistema;
+>   > 7.1) O sistema já possui esse estágio cadastrado --> Gera erro e impede a duplicação.
