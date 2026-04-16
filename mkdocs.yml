@@ -92,6 +92,9 @@ markdown_extensions:
   - toc:
       permalink: true
 
+  - plantuml_markdown:
+      server: http://www.plantuml.com/plantuml
+
 plugins:
   - plantuml:
       puml_url: https://www.plantuml.com/plantuml/
