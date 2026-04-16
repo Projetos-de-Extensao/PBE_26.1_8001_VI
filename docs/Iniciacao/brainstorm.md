@@ -21,14 +21,13 @@ A equipe se juntou pra discutir ideias gerais sobre o projeto de um sistema de g
 ### 1. Qual o objetivo principal da aplicação?
  
 <p align = "justify">
-Deve ser uma plataforma de gestão centralizada de estágios que garanta conformidade com a Lei nº 11.788/2008 e regulamentos do Ibmec.
-
+Ser uma plataforma para gestão focada nos estágios da IBMEC, estando de acordo com a Lei nº 11.788/2008 e regulamentos do Ibmec.
  
-A plataforma deve fornecer ferramentas para acompanhamento e supervisão de estudantes estagiários, permitindo validação de relatórios.
+A plataforma deve fornecer ferramentas para acompanhamento e supervisão de estudantes estagiários, possibilitando a validação de relatórios.
  
-O objetivo da aplicação é automatizar e simplificar os processos de formalização, acompanhamento e validação de estágios, reduzindo trabalho manual.
+O objetivo da aplicação é automatizar e facilitar os processos de formalização, acompanhamento e validação de estágios, reduzindo trabalho manual.
  
-O principal objetivo da aplicação é garantir que todos os estágios estejam em conformidade com a legislação trabalhista e educacional vigente.
+O principal objetivo da aplicação é garantir que todos os estágios estejam de acordo com a legislação trabalhista e educacional vigente.
  
 A plataforma deve gerenciar de forma integrada estudantes, empresas, orientadores, documentos (TCE) e relatórios de estágios.
 </p>
