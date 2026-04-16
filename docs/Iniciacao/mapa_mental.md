@@ -25,6 +25,6 @@
 
 ** Tecnologia
 *** IA
-*** IntegraçõesSSSS
+*** Integrações
 @endmindmap
 ```
