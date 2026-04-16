@@ -19,16 +19,15 @@ Back-end desenvolvido na disciplina de Projeto Back-End do IBMEC, construído em
  # Levantamento de Requisitos
  
   ### Requisitos Funcionais (RF)
-   #### Contas
-      RF01 -> O sistema deve permitir a criação de contas de usuário. <br>
-      RF02 -> O sistema deve validar os dados informados no cadastro. <br>
-      RF03 -> O sistema deve criptografar dados sensíveis do usuário. <br>
-      RF04 -> O sistema deve enviar e-mail de verificação com link de confirmação. <br>
-      RF05 -> O sistema deve permitir login no sistema. <br>
-      RF06 -> O sistema deve permitir alteração dos dados da conta. <br>
-      RF07 -> O sistema deve permitir recuperação de senha. <br>
-      RF08 -> O sistema deve realizar exclusão lógica de contas. <br>
-      RF09 -> O sistema deve permitir visualização dos dados da conta. <br>
+   ### Contas
+   RF01 -> O sistema deve permitir a criação de contas de usuário. <br>
+   RF02 -> O sistema deve validar os dados informados no cadastro. <br>
+   RF03 -> O sistema deve criptografar dados sensíveis do usuário. <br>
+   RF04 -> O sistema deve enviar e-mail de verificação com link de confirmação. <br>
+   RF05 -> O sistema deve permitir login no sistema. <br>
+   RF06 -> O sistema deve permitir alteração dos dados da conta. <br>
+   RF07 -> O sistema deve permitir recuperação de senha. <br>    RF08 -> O sistema deve realizar exclusão lógica de contas. <br>
+   RF09 -> O sistema deve permitir visualização dos dados da conta. <br>
 
 
 
