@@ -23,7 +23,7 @@ Back-end desenvolvido na disciplina de Projeto Back-End do IBMEC, construído em
   * Descrição - Aluno cadastr as informações do estágio no sistema.  <br>
 
     * Fluxo principal: <br>
-      1 -- O aluno acessa o sistema; <br>
+      1 - O aluno acessa o sistema; <br>
       2 -- O aluno cria uma conta; <br>
       3 -- O aluno realiza login; <br>
       4 -- O aluno seleciona a opção de cadastrar estágio; <br>
