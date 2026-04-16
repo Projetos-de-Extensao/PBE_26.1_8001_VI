@@ -3,6 +3,39 @@ id: diagrama_de_casos de uso
 title: Diagrama de Casos de Uso
 ---
 
+## Diagrama de Casos de Uso
+
+```plantuml
+@startuml
+left to right direction
+
+actor "Estudante" as Estudante
+actor "Professor Orientador" as Professor
+actor "Supervisor" as Supervisor
+actor "Coordenação" as Coordenacao
+
+usecase "Cadastrar Estágio" as UC1
+usecase "Enviar Relatório" as UC2
+usecase "Avaliar Relatório" as UC3
+usecase "Consultar Status" as UC4
+usecase "Validar Estágio" as UC6
+
+Estudante --> UC1
+Estudante --> UC2
+Estudante --> UC4
+
+Professor --> UC3
+Professor --> UC4
+
+Supervisor --> UC3
+Supervisor --> UC4
+
+Coordenacao --> UC6
+Coordenacao --> UC4
+
+@enduml
+```
+
 ## Casos de Uso
 
 ### Descrição:
