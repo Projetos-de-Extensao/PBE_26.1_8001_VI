@@ -78,31 +78,30 @@ Back-end desenvolvido na disciplina de Projeto Back-End do IBMEC, construído em
 
 
 
-   ### Requisitos Não Funcionais (RNF)
-   Requisitos Não Funcionais (RNF)​
+   ### Requisitos Não Funcionais (RNF) <br>
+   Requisitos Não Funcionais (RNF) <br>​
 
 RNF01 – Segurança: o sistema deve garantir a proteção dos
 dados por meio de criptografia durante armazenamento e
-transmissão.​
+transmissão.​ <br>
 RNF02 – Confiabilidade: o sistema deve validar todas as
 entradas de dados, assegurando consistência e evitando
-informações inválidas.​
+informações inválidas.​ <br>
 RNF03 – Verificação: o sistema deve garantir a verificação
-de e-mails por meio de links válidos e autenticados.​
-
-​
-   RNF01 -> O sistema deve dar segurança pra dados com criptografias. <br>
-   RNF02 -> O sistema deve validar as entradas de dados. <br>
-   RNF03 -> O sistema deve verificar se e-mais com link de verificação estão válidos. <br>
-   RNF04 -> O sistema deve enviar e-mails automaticamente. <br>
-   RNF05 -> O sistema deve ter bons desempenhos operacionais. <br>
-   RNF06 -> O sistema deve permitir assegurar a integridade dos dados. <br>
-   RNF07 -> O sistema deve ter interface intuitiva. <br>    
-
+de e-mails por meio de links válidos e autenticados.​ <br>
+RNF04 – Comunicação: o sistema deve garantir o envioautomático de e-
+mails de forma contínua e sem falhas. <br>​
+RNF05 – Desempenho: o sistema deve apresentar tempo
+deresposta adequado durante a execução das operações.​ <br>
+RNF06 – Integridade: o sistema deve assegurar a integridadedos
+dados durante armazenamento e manipulação. <br>​
+RNF07 – Usabilidade: o sistema deve possuir uma interfaceintuitiva e
+de fácil utilização. <br>​
 
 
 
-   
+
+
  # Casos de Uso de forma narrativa
 
 ## Caso de Uso 1 - Criação de Conta <br>
