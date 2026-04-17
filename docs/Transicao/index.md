@@ -1,15 +1,18 @@
-# Transição
+# Transicao
 
-> Objetivo: Entregar o sistema ao ambiente de produção e aos usuários finais.
+> Objetivo: entregar o sistema ao ambiente de producao e aos usuarios finais.
 
 ## Principais atividades
 
-* Realizar testes finais de aceitação.
+- realizar testes finais de aceitacao
+- treinar os usuarios
+- corrigir defeitos encontrados apos a entrega
+- preparar o ambiente de producao
 
-* Treinar os usuários.
+## Produto principal
 
-* Corrigir defeitos encontrados após a entrega.
+Sistema funcionando no ambiente do cliente com usuarios treinados.
 
-* Preparar o ambiente de produção.
+## Documento relacionado
 
-* Produto principal: Sistema funcionando no ambiente do cliente com usuários treinados.
+- [Apresentacao final](apresentacao_final.md)

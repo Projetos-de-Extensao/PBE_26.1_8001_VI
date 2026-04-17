@@ -17,6 +17,7 @@ nav:
       - Elaboracao: Elaboracao/index.md
       - Construcao: Construcao/index.md
       - Transicao: Transicao/index.md
+      - Apresentacao Final: Transicao/apresentacao_final.md
   - Apoio:
       - MkDocs: mkdocs.md
       - Bibliografia: bibliografia.md
