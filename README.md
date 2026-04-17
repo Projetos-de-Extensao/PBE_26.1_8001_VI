@@ -7,7 +7,7 @@ Henrique Cals, Guilherme Pinon, Caio Cunha, Henrique Mundy, João Pedro Sampaio 
 
 Apresentação:
 
-https://liveestacio-my.sharepoint.com/:p:/g/personal/202501537839_alunos_ibmec_edu_br/IQB8UMz0nByBS7uPJAoZ99wRASNVzPJvIqZhxM6cfmXu6qw?e=pvbCTm
+https://liveestacio-my.sharepoint.com/:p:/g/personal/202501537839_alunos_ibmec_edu_br/IQB8UMz0nByBS7uPJAoZ99wRASNVzPJvIqZhxM6cfmXu6qw?e=l55hlh
 
 **Código da Disciplina**: IBM8936<br>
 
