@@ -1,41 +1,35 @@
 ```plantuml
 @startuml
 class Estudante {
-  nome
-  matricula
-  curso
-}
-
-class Ibmec {
-  nome
+  nome: String
+  matricula: String
+  curso: String
 }
 
 class Empresa {
-  nome
-  cnpj
+  nome: String
+  cnpj: String
 }
 
 class ProfessorOrientador {
-  nome
+  nome: String
 }
 
 class SupervisorEmpresa {
-  nome
+  nome: String
 }
 
 class Estagio {
-  tipo
-  cargaHoraria
-  status
+  tipo: String
+  cargaHoraria: Integer
+  status: String
 }
 
 class Relatorio {
-  dataEnvio
-  status
+  dataEnvio: Date
+  status: String
 }
 
-Ibmec --> Estudante
-Ibmec --> ProfessorOrientador
 
 Empresa --> SupervisorEmpresa
 Empresa --> Estagio
@@ -65,12 +59,6 @@ Estagio --> Relatorio
 	- Pesquisar
 	- Visualização
 	- Seguir/Deixar de Seguir
-
-- Postagens (Público) 	 	
-	- Criação
-	- Exclusão
-	- Interação
-	- Visualização
 
 - Mensagens (Privado)
 	- Criação
