@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Content
+from .models import Content, Estudante, Empresa, ProfessorOrientador, SupervisorEmpresa, Estagio, Relatorio
 
 
 @admin.register(Content)
@@ -26,3 +26,44 @@ class ContentAdmin(admin.ModelAdmin):
         if obj:
             return self.readonly_fields + ('creator',)
         return self.readonly_fields
+
+
+@admin.register(Estudante)
+class EstudanteAdmin(admin.ModelAdmin):
+    list_display = ('nome', 'matricula', 'curso')
+    search_fields = ('nome', 'matricula', 'curso')
+
+
+@admin.register(Empresa)
+class EmpresaAdmin(admin.ModelAdmin):
+    list_display = ('nome', 'cnpj')
+    search_fields = ('nome', 'cnpj')
+
+
+@admin.register(ProfessorOrientador)
+class ProfessorOrientadorAdmin(admin.ModelAdmin):
+    list_display = ('nome',)
+    search_fields = ('nome',)
+
+
+@admin.register(SupervisorEmpresa)
+class SupervisorEmpresaAdmin(admin.ModelAdmin):
+    list_display = ('nome', 'empresa')
+    search_fields = ('nome', 'empresa__nome')
+    list_filter = ('empresa',)
+
+
+@admin.register(Estagio)
+class EstagioAdmin(admin.ModelAdmin):
+    list_display = ('estudante', 'empresa', 'tipo', 'carga_horaria', 'status', 'professor_orientador', 'supervisor_empresa')
+    list_filter = ('tipo', 'status', 'empresa')
+    search_fields = ('estudante__nome', 'empresa__nome', 'professor_orientador__nome')
+    list_editable = ('status',)
+
+
+@admin.register(Relatorio)
+class RelatorioAdmin(admin.ModelAdmin):
+    list_display = ('estagio', 'data_envio', 'status')
+    list_filter = ('status', 'data_envio')
+    search_fields = ('estagio__estudante__nome', 'estagio__empresa__nome')
+    list_editable = ('status',)
