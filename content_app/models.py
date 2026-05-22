@@ -26,6 +26,23 @@ class Content(models.Model):
    
 
 
+class Playlist(models.Model):
+    title = models.CharField(max_length=255)  # Título da playlist
+    description = models.TextField(blank=True, null=True)  # Descrição opcional
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='playlists')  # Proprietário
+    contents = models.ManyToManyField(Content, related_name='playlists', blank=True)  # Conteúdos (N:N)
+    created_at = models.DateTimeField(auto_now_add=True)  # Data de criação
+    updated_at = models.DateTimeField(auto_now=True)  # Data de última atualização
+
+    class Meta:
+        ordering = ['-created_at']
+        verbose_name = 'Playlist'
+        verbose_name_plural = 'Playlists'
+
+    def __str__(self):
+        return self.title
+
+
 class Estudante(models.Model):
     nome = models.CharField(max_length=255)
     matricula = models.CharField(max_length=50, unique=True)

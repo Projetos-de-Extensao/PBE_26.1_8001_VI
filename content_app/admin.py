@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Content, Estudante, Empresa, ProfessorOrientador, SupervisorEmpresa, Estagio, Relatorio
+from .models import Content, Playlist, Estudante, Empresa, ProfessorOrientador, SupervisorEmpresa, Estagio, Relatorio
 
 
 @admin.register(Content)
@@ -26,6 +26,15 @@ class ContentAdmin(admin.ModelAdmin):
         if obj:
             return self.readonly_fields + ('creator',)
         return self.readonly_fields
+
+
+@admin.register(Playlist)
+class PlaylistAdmin(admin.ModelAdmin):
+    list_display = ('title', 'user', 'created_at', 'updated_at')
+    list_filter = ('created_at', 'user')
+    search_fields = ('title', 'description', 'user__username')
+    readonly_fields = ('created_at', 'updated_at')
+    filter_horizontal = ('contents',)
 
 
 @admin.register(Estudante)
