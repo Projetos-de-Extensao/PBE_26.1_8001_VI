@@ -8,6 +8,12 @@ class Content(models.Model):
         ('video', 'Video'),
     ]
 
+    STATUS_CHOICES = [
+        ('published', 'Published'),
+        ('draft', 'Draft'),
+        ('archived', 'Archived'),
+    ]
+
     title = models.CharField(max_length=255)
     description = models.TextField()
     file_url = models.URLField()
@@ -17,7 +23,7 @@ class Content(models.Model):
     views = models.IntegerField(default=0)
     likes = models.IntegerField(default=0)
     is_public = models.BooleanField(default=True)
-    status = models.CharField(max_length=20, default='published')
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='published')
     creator = models.ForeignKey(User, related_name='contents', on_delete=models.CASCADE)
 
     def __str__(self):
@@ -48,6 +54,9 @@ class Estudante(models.Model):
     matricula = models.CharField(max_length=50, unique=True)
     curso = models.CharField(max_length=255)
 
+    class Meta:
+        ordering = ['nome']
+
     def __str__(self):
         return self.nome
 
@@ -56,12 +65,18 @@ class Empresa(models.Model):
     nome = models.CharField(max_length=255)
     cnpj = models.CharField(max_length=18, unique=True)
 
+    class Meta:
+        ordering = ['nome']
+
     def __str__(self):
         return self.nome
 
 
 class ProfessorOrientador(models.Model):
     nome = models.CharField(max_length=255)
+
+    class Meta:
+        ordering = ['nome']
 
     def __str__(self):
         return self.nome
@@ -70,6 +85,9 @@ class ProfessorOrientador(models.Model):
 class SupervisorEmpresa(models.Model):
     nome = models.CharField(max_length=255)
     empresa = models.ForeignKey(Empresa, related_name='supervisores', on_delete=models.CASCADE)
+
+    class Meta:
+        ordering = ['nome']
 
     def __str__(self):
         return self.nome
@@ -95,6 +113,9 @@ class Estagio(models.Model):
     professor_orientador = models.ForeignKey(ProfessorOrientador, related_name='estagios', on_delete=models.CASCADE)
     supervisor_empresa = models.ForeignKey(SupervisorEmpresa, related_name='estagios', on_delete=models.CASCADE)
 
+    class Meta:
+        ordering = ['-id']
+
     def __str__(self):
         return f"Estágio de {self.estudante} em {self.empresa}"
 
@@ -109,6 +130,9 @@ class Relatorio(models.Model):
     data_envio = models.DateField()
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='pendente')
     estagio = models.ForeignKey(Estagio, related_name='relatorios', on_delete=models.CASCADE)
+
+    class Meta:
+        ordering = ['-data_envio']
 
     def __str__(self):
         return f"Relatório de {self.estagio} ({self.data_envio})"

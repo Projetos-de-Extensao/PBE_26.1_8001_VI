@@ -18,6 +18,12 @@ nav:
       - Construcao: Construcao/index.md
       - Transicao: Transicao/index.md
       - Apresentacao Final: Transicao/apresentacao_final.md
+  - Engenharia:
+      - Documento de Visao: Iniciacao/documento_de_visao.md
+      - Casos de Uso: Elaboracao/casos_de_uso.md
+      - Arquitetura (DAS): Elaboracao/das.md
+      - Requisitos Nao Funcionais: Elaboracao/requisitos_nao_funcionais.md
+      - LGPD: Elaboracao/lgpd.md
   - Apoio:
       - MkDocs: mkdocs.md
       - Bibliografia: bibliografia.md

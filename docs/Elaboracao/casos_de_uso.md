@@ -40,81 +40,65 @@ Coordenacao --> UC4
 
 ### Descrição:
 
-- Contas
-	- Criação
-	- Entrada
-	- Alteração
-	- Recuperar Senha
-	- Exclusão Lógica
-	- Visualização
+- **Cadastrar Estágio** — registrar um novo estágio vinculando estudante, empresa, professor orientador e supervisor.
+- **Enviar Relatório** — submeter relatório periódico vinculado a um estágio.
+- **Avaliar Relatório** — analisar e definir o status do relatório (aprovado/reprovado).
+- **Validar Estágio** — validar e alterar o status do estágio (em andamento/concluído/cancelado).
+- **Consultar Status** — consultar o andamento de estágios e relatórios.
 
-- Perfis
-	- Edição
-	- Pesquisar
-	- Visualização
-	- Seguir/Deixar de Seguir
-
-- Postagens (Público) 	 	
-	- Criação
-	- Exclusão
-	- Interação
-	- Visualização
-
-- Mensagens (Privado)
-	- Criação
-	- Exclusão
-	- Visualização
-
-- Galerias
-	- Albuns
-- Blogs
-- Grupos
-
-### Criação de uma conta no sistema
+### Cadastrar Estágio
 
 * Atores:
 
-	- Usuário
+	- Estudante
 	- Sistema
 
 - Pré-Condições:
-	- Nenhuma
+	- Estudante, Empresa, Professor Orientador e Supervisor já cadastrados.
+	- Usuário autenticado.
 
 * Fluxo Básico:
-    1. Usuário fornece e-mail, senha e confirmações
-    2. Dados do Usuário são validados pelo Sistema
-    3. Dados do Usuário são encriptados pelo Sistema
-    4. Dados do Usuário são persistidos pelo Sistema
-    5. Sistema gera um link com prazo de expiração
-    6. Sistema envia e-mail de verificação, com o link, para o Usuário
-    7. Usuário confirma o e-mail antes do link expirar
-    8. Sistema confirma que o Cadastro do Usuário foi realizado com sucesso
-    9. Sistema redireciona o Usuário para a página de Entrada
+    1. Estudante informa tipo do estágio, carga horária, empresa, professor orientador e supervisor
+    2. Sistema valida os dados (carga horária positiva; supervisor pertencente à empresa informada)
+    3. Sistema persiste o estágio com status inicial "em andamento"
+    4. Sistema retorna o estágio criado
 
 - Fluxos Alternativos:
-	- 2a. E-mail do Usuário é inválido
-		2a1. Sistema exibe mensagem de erro
-	- 2b. Senha do Usuário não respeita regras de segurança
-		- 2b1. Sistema exibe mensagem de erro
-	- 3a. Usuário tenta confirmar o e-mail depois de o link expirar
-		- 3a1. Sistema sugere que o Usuário realize um novo Cadastro
+	- 2a. Carga horária inválida (≤ 0)
+		- 2a1. Sistema retorna erro de validação
+	- 2b. Supervisor não pertence à empresa informada
+		- 2b1. Sistema retorna erro de validação
 
-### Entrada do usuário no sistema
+### Enviar Relatório
 
 - Atores:
-	- Usuário
+	- Estudante
 	- Sistema
 
 - Pré-Condições:
-	Usuário deve estar cadastrado
+	- Estágio cadastrado.
+	- Usuário autenticado.
 
 - Fluxo Básico:
-    - 1. Usuário fornece e-mail e senha
-	- 2. Sistema autentica o Usuário
-	- 3. Sistema redireciona o Usuário para a página inicial
+    1. Estudante informa a data de envio e o estágio relacionado
+	2. Sistema persiste o relatório com status inicial "pendente"
+	3. Sistema retorna o relatório criado
 
 - Fluxos Alternativos:
-	- 2a. Dados do Usuário Inválidos
-		- 2a1. Sistema exibe mensagem de erro
-	- 3a. Primeio acesso do Usuário
-		- 3a1. Sistema redireciona o Usuário para a página de edição de perfil
+	- 1a. Estágio inexistente
+		- 1a1. Sistema retorna erro de validação
+
+### Avaliar Relatório
+
+- Atores:
+	- Professor Orientador / Supervisor
+	- Sistema
+
+- Pré-Condições:
+	- Relatório enviado (status "pendente").
+	- Usuário autenticado.
+
+- Fluxo Básico:
+	1. Avaliador consulta o relatório pendente
+	2. Avaliador define o status como "aprovado" ou "reprovado"
+	3. Sistema persiste a alteração de status
