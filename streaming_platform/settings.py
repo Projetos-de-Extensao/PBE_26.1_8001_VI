@@ -16,24 +16,32 @@ from pathlib import Path
 import dj_database_url
 from decouple import Csv, config
 
+# Diretório base utilizado para construção dos caminhos do projeto
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
+# Configurações iniciais de desenvolvimento
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
+# Chave secreta utilizada pela aplicação
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config('SECRET_KEY')
 
+# Define se a aplicação está em modo de depuração
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
+# Hosts permitidos para acessar a aplicação
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost,127.0.0.1', cast=Csv())
 
 
+# Definição das aplicações instaladas
+
 # Application definition
 
+# Lista de aplicações utilizadas pelo projeto
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -48,6 +56,7 @@ INSTALLED_APPS = [
     'content_app',
 ]
 
+# Middlewares responsáveis pelo processamento das requisições
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'corsheaders.middleware.CorsMiddleware',
@@ -61,6 +70,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'streaming_platform.urls'
 
+# Configuração principal do mecanismo de templates
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -76,9 +86,11 @@ TEMPLATES = [
     },
 ]
 
+# Aplicação WSGI principal do projeto
 WSGI_APPLICATION = 'streaming_platform.wsgi.application'
 
 
+# Configurações do banco de dados
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 # Usa DATABASE_URL se definida (ex.: Postgres em produção); caso contrário, SQLite local.
@@ -86,11 +98,13 @@ WSGI_APPLICATION = 'streaming_platform.wsgi.application'
 # DATABASE_URL vazia ou ausente faz cair no SQLite local.
 DATABASE_URL = config('DATABASE_URL', default='') or f'sqlite:///{BASE_DIR / "db.sqlite3"}'
 
+# Configuração da conexão utilizada pelo Django
 DATABASES = {
     'default': dj_database_url.parse(DATABASE_URL, conn_max_age=600)
 }
 
 
+# Validações de senha
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
@@ -110,6 +124,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+# Configurações de internacionalização
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
@@ -122,6 +137,7 @@ USE_I18N = True
 USE_TZ = True
 
 
+# Configurações de arquivos estáticos
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
@@ -130,6 +146,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+# Configurações globais da API REST
 # Django REST Framework
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
@@ -157,6 +174,7 @@ REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
 
+# Configurações de autenticação JWT
 # Simple JWT
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
@@ -165,6 +183,7 @@ SIMPLE_JWT = {
     'BLACKLIST_AFTER_ROTATION': False,
 }
 
+# Configurações da documentação automática da API
 # drf-spectacular (OpenAPI / Swagger)
 SPECTACULAR_SETTINGS = {
     'TITLE': 'API de Gestão de Estágios',
@@ -174,6 +193,7 @@ SPECTACULAR_SETTINGS = {
     'SERVE_INCLUDE_SCHEMA': False,
 }
 
+# Configurações de compartilhamento entre origens
 # CORS
 CORS_ALLOWED_ORIGINS = config(
     'CORS_ALLOWED_ORIGINS',
@@ -181,6 +201,7 @@ CORS_ALLOWED_ORIGINS = config(
     cast=Csv(),
 )
 
+# Configurações de segurança da aplicação
 # Segurança HTTP (controlada por variáveis de ambiente)
 SECURE_SSL_REDIRECT = config('SECURE_SSL_REDIRECT', default=False, cast=bool)
 SESSION_COOKIE_SECURE = config('SESSION_COOKIE_SECURE', default=False, cast=bool)
