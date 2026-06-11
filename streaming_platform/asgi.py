@@ -11,6 +11,8 @@ import os
 
 from django.core.asgi import get_asgi_application
 
+# Define o módulo de configurações padrão utilizado pelo Django
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'streaming_platform.settings')
 
+# Cria a aplicação ASGI utilizada por servidores compatíveis
 application = get_asgi_application()
