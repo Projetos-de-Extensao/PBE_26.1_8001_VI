@@ -1,6 +1,6 @@
 from rest_framework import viewsets
 from rest_framework.decorators import action
-from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
 from .models import (
@@ -30,7 +30,7 @@ class ContentViewSet(viewsets.ModelViewSet):
     # select_related evita N+1 ao serializar o criador.
     queryset = Content.objects.select_related('creator').all()
     serializer_class = ContentSerializer
-    permission_classes = [IsAuthenticatedOrReadOnly]
+    permission_classes = [IsAuthenticated]
     filterset_fields = ['content_type', 'is_public', 'status', 'creator']
     search_fields = ['title', 'description']
     ordering_fields = ['upload_date', 'views', 'likes', 'title']

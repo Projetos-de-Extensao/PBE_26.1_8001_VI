@@ -104,9 +104,15 @@ class ContentAPITests(APITestCase):
         )
 
     def test_list_contents(self):
+        self.client.force_authenticate(user=self.user)
         response = self.client.get(f'{API}/contents/')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(len(response.data['results']), 1)
+
+    def test_list_contents_unauthenticated(self):
+        # Toda a API exige autenticação: sem credenciais retorna 401.
+        response = self.client.get(f'{API}/contents/')
+        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
 
     def test_create_content_authenticated(self):
         self.client.force_authenticate(user=self.user)
